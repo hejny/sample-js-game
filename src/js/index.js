@@ -1,19 +1,12 @@
+import { Scene } from './Scene.js';
+import { Spaceship } from './Spaceship.js';
+import { Vector2 } from './Vector2.js';
+
 window.addEventListener('load', () => {
+    const sceneElement = window.document.getElementById('scene');
+    const scene = new Scene(sceneElement);
+    const spaceship = new Spaceship(new Vector2(333, 333), 60, '#906090');
 
-    const scene = window.document.getElementById('scene');
-    const {
-        width,
-        height
-    } = scene.getBoundingClientRect();
-    console.log(width, height);
-    scene.width = width;
-    scene.height = height;
-    const ctx = scene.getContext('2d');
-
-    ctx.beginPath();
-    ctx.arc(333, 333, 60, 0, Math.PI * 2, true);
-    ctx.closePath();
-    ctx.fillStyle = '#906090';
-    ctx.fill();
-
+    scene.addObject(spaceship);
+    scene.render();
 });

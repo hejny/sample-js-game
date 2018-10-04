@@ -1,9 +1,10 @@
 export class Scene {
-    constructor(sceneElement) {
+    constructor(sceneElement, friction) {
         const { width, height } = sceneElement.getBoundingClientRect();
         sceneElement.width = width;
         sceneElement.height = height;
         this.ctx = sceneElement.getContext('2d');
+        this.friction = friction;
         this.objects = [];
     }
 
@@ -21,6 +22,7 @@ export class Scene {
     update(delta) {
         for (const object of this.objects) {
             object.position.addInPlace(object.movement.scale(delta));
+            object.movement.scaleInPlace(Math.pow(this.friction, delta));
         }
     }
 }

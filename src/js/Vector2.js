@@ -16,4 +16,9 @@ export class Vector2 {
     scale(ratio) {
         return new Vector2(this.x * ratio, this.y * ratio);
     }
+
+    scaleInPlace(ratio) {
+        this.x *= ratio;
+        this.y *= ratio;
+    }
 }

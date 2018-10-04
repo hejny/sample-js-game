@@ -1,0 +1,19 @@
+{
+  "name": "sample-js-game",
+  "scripts": {
+    "start": "node server.js",
+    "prettier": "prettier --config .prettierrc --write \"{src,test,samples}/**/*.{ts,tsx,js,html,css}\" webpack.config.js",
+    "prettier-watch": "onchange \"**/*.{js,ts,tsx,json}\" -- npm run prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hejny/sample-js-game.git"
+  },
+  "author": "Pavol Hejný",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^1.12.1",
+    "express": "^4.16.3",
+    "serve-static": "^1.13.2"
+  }
+}

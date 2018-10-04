@@ -16,7 +16,9 @@ export class Scene {
 
     render() {
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
-        for (const object of this.objects) {
+        for (const object of this.objects.sort((a, b) =>
+            Math.sign(a.zIndex - b.zIndex),
+        )) {
             object.render(this.ctx);
         }
     }

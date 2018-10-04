@@ -1,16 +1,16 @@
 import { Vector2 } from './Vector2.js';
 
-export class Spaceship {
-    constructor(src, center, position, rotation, width, color) {
+export class Mesh {
+    constructor(src, center, zIndex, position, rotation, width) {
         this.image = window.document.createElement('IMG');
         this.image.src = src;
-        this.position = position;
         this.center = center;
+        this.zIndex = zIndex;
+        this.position = position;
         this.rotation = rotation;
         this.movement = Vector2.Zero();
         this.rotationMovement = 0;
         this.width = width;
-        this.color = color;
     }
 
     get size() {

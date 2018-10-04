@@ -1,5 +1,5 @@
 import { Scene } from './Scene.js';
-import { Spaceship } from './Spaceship.js';
+import { Mesh } from './Mesh.js';
 import { Vector2 } from './Vector2.js';
 import {
     FRICTION,
@@ -28,13 +28,13 @@ function pressedControls() {
 window.addEventListener('load', () => {
     const sceneElement = window.document.getElementById('scene');
     const scene = new Scene(sceneElement, FRICTION);
-    const spaceship = new Spaceship(
+    const spaceship = new Mesh(
         './assets/tux.png',
         new Vector2(0.5, 0.7),
+        2,
         scene.size.scaleInPlace(0.5),
-        0,
+        -Math.PI / 2,
         160,
-        '#906090',
     );
 
     scene.addObject(spaceship);
@@ -53,6 +53,19 @@ window.addEventListener('load', () => {
                 Math.cos(spaceship.rotation) * SPACESHIP_SPEED;
             spaceship.movement.y =
                 Math.sin(spaceship.rotation) * SPACESHIP_SPEED;
+
+            const particle = new Mesh(
+                './assets/windows.png',
+                new Vector2(0.5, 0.5),
+                1,
+                spaceship.position.clone(),
+                -Math.PI / 2,
+                10,
+            );
+            particle.movement = spaceship.movement.scale(-2);
+            particle.rotationMovement =
+                ((Math.random() - 0.5) * Math.PI * 2) / 10;
+            scene.addObject(particle);
         }
 
         if (timeLast) scene.update((time - timeLast) / 1000);

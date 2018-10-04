@@ -8,6 +8,10 @@ export class Vector2 {
         return new Vector2(0, 0);
     }
 
+    clone() {
+        return new Vector2(this.x, this.y);
+    }
+
     addInPlace(vector) {
         this.x += vector.x;
         this.y += vector.y;

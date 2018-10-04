@@ -1,6 +1,9 @@
+import { Vector2 } from './Vector2.js';
+
 export class Spaceship {
     constructor(position, size, color) {
         this.position = position;
+        this.movement = Vector2.Zero();
         this.size = size;
         this.color = color;
     }

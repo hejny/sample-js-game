@@ -17,4 +17,10 @@ export class Scene {
             object.render(this.ctx);
         }
     }
+
+    update(delta) {
+        for (const object of this.objects) {
+            object.position.addInPlace(object.movement.scale(delta));
+        }
+    }
 }

@@ -1,7 +1,11 @@
 import { Scene } from './Scene.js';
 import { Spaceship } from './Spaceship.js';
 import { Vector2 } from './Vector2.js';
-import { FRICTION, SPACESHIP_SPEED } from './config.js';
+import {
+    FRICTION,
+    SPACESHIP_SPEED,
+    SPACESHIP_SPEED_ROTATION,
+} from './config.js';
 
 let pressedKeys = [];
 window.document.addEventListener('keydown', (event) => {
@@ -24,7 +28,14 @@ function pressedControls() {
 window.addEventListener('load', () => {
     const sceneElement = window.document.getElementById('scene');
     const scene = new Scene(sceneElement, FRICTION);
-    const spaceship = new Spaceship(new Vector2(333, 333), 60, '#906090');
+    const spaceship = new Spaceship(
+        './assets/tux.png',
+        new Vector2(0.5, 0.7),
+        scene.size.scaleInPlace(0.5),
+        0,
+        160,
+        '#906090',
+    );
 
     scene.addObject(spaceship);
 
@@ -32,16 +43,16 @@ window.addEventListener('load', () => {
     function loop(time) {
         const controls = pressedControls();
         if (controls.RIGHT) {
-            spaceship.movement.x = SPACESHIP_SPEED;
+            spaceship.rotationMovement = SPACESHIP_SPEED_ROTATION;
         }
         if (controls.LEFT) {
-            spaceship.movement.x = -SPACESHIP_SPEED;
-        }
-        if (controls.DOWN) {
-            spaceship.movement.y = SPACESHIP_SPEED;
+            spaceship.rotationMovement = -SPACESHIP_SPEED_ROTATION;
         }
         if (controls.UP) {
-            spaceship.movement.y = -SPACESHIP_SPEED;
+            spaceship.movement.x =
+                Math.cos(spaceship.rotation) * SPACESHIP_SPEED;
+            spaceship.movement.y =
+                Math.sin(spaceship.rotation) * SPACESHIP_SPEED;
         }
 
         if (timeLast) scene.update((time - timeLast) / 1000);

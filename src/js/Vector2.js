@@ -11,6 +11,7 @@ export class Vector2 {
     addInPlace(vector) {
         this.x += vector.x;
         this.y += vector.y;
+        return this;
     }
 
     scale(ratio) {
@@ -20,5 +21,6 @@ export class Vector2 {
     scaleInPlace(ratio) {
         this.x *= ratio;
         this.y *= ratio;
+        return this;
     }
 }

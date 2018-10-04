@@ -27,10 +27,20 @@ export class Scene {
         for (const object of this.objects) {
             object.position.addInPlace(object.movement.scale(delta));
             object.rotation += object.rotationMovement;
+            object.width += object.growth;
+
             const frictionWithDelta = Math.pow(this.friction, delta);
             object.movement.scaleInPlace(frictionWithDelta);
             object.rotationMovement *= frictionWithDelta;
+            object.growth *= frictionWithDelta;
+
+            if (object.lifetime !== -1) {
+                object.lifetime -= delta;
+            }
         }
+        this.objects = this.objects.filter(
+            (object) => object.lifetime === -1 || object.lifetime > 0,
+        );
     }
 
     get size() {

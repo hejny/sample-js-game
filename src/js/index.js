@@ -62,9 +62,18 @@ window.addEventListener('load', () => {
                 -Math.PI / 2,
                 10,
             );
-            particle.movement = spaceship.movement.scale(-2);
+            particle.movement = spaceship.movement
+                .scale(-2)
+                .addInPlace(
+                    new Vector2(
+                        (Math.random() - 0.5) * 100,
+                        (Math.random() - 0.5) * 100,
+                    ),
+                ); //todo to config
             particle.rotationMovement =
                 ((Math.random() - 0.5) * Math.PI * 2) / 10;
+            particle.growth = 2;
+            particle.lifetime = 1;
             scene.addObject(particle);
         }
 

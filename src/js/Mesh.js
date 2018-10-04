@@ -8,9 +8,11 @@ export class Mesh {
         this.zIndex = zIndex;
         this.position = position;
         this.rotation = rotation;
+        this.width = width;
         this.movement = Vector2.Zero();
         this.rotationMovement = 0;
-        this.width = width;
+        this.growth = 0;
+        this.lifetime = -1;
     }
 
     get size() {
@@ -24,6 +26,7 @@ export class Mesh {
         ctx.save();
         ctx.translate(this.position.x, this.position.y);
         ctx.rotate(this.rotation + Math.PI / 2);
+        ctx.globalAlpha = this.lifetime === -1 ? 1 : this.lifetime / 10;
         ctx.drawImage(
             this.image,
             0,

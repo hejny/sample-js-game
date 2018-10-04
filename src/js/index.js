@@ -18,4 +18,28 @@ window.addEventListener('load', () => {
         requestAnimationFrame(loop);
     }
     requestAnimationFrame(loop);
+
+    window.document.addEventListener('keydown', (event) => {
+        switch (event.keyCode) {
+            case 39: //right
+            case 68:
+                spaceship.movement.x = 10;
+                break;
+            case 37: //left
+            case 65:
+                spaceship.movement.x = -10;
+                break;
+            case 38: //up
+            case 87:
+                spaceship.movement.y = 10;
+                break;
+            case 40: //down
+            case 83:
+                spaceship.movement.y = -10;
+                break;
+
+            default:
+                console.log('pressed', event.keyCode);
+        }
+    });
 });

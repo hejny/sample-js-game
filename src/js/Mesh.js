@@ -26,7 +26,8 @@ export class Mesh {
         ctx.save();
         ctx.translate(this.position.x, this.position.y);
         ctx.rotate(this.rotation + Math.PI / 2);
-        ctx.globalAlpha = this.lifetime === -1 ? 1 : this.lifetime / 10;
+        ctx.globalAlpha =
+            this.lifetime === -1 ? 1 : Math.sqrt(this.lifetime / 10);
         ctx.drawImage(
             this.image,
             0,

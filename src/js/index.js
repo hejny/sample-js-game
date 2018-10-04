@@ -55,7 +55,7 @@ window.addEventListener('load', () => {
                 Math.sin(spaceship.rotation) * SPACESHIP_SPEED;
 
             const particle = new Mesh(
-                './assets/windows.png',
+                './assets/windows7.png',
                 new Vector2(0.5, 0.5),
                 1,
                 spaceship.position.clone(),
@@ -66,13 +66,13 @@ window.addEventListener('load', () => {
                 .scale(-2)
                 .addInPlace(
                     new Vector2(
-                        (Math.random() - 0.5) * 100,
-                        (Math.random() - 0.5) * 100,
+                        (Math.random() - 0.5) * 400,
+                        (Math.random() - 0.5) * 400,
                     ),
                 ); //todo to config
             particle.rotationMovement =
                 ((Math.random() - 0.5) * Math.PI * 2) / 10;
-            particle.growth = 2;
+            particle.growth = 5;
             particle.lifetime = 1;
             scene.addObject(particle);
         }

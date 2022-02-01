@@ -4,7 +4,6 @@
 
  [![Package Quality](https://packagequality.com/shield/sample-js-game.svg)](https://packagequality.com/#?package=sample-js-game)
  [![License](https://img.shields.io/github/license/hejny/sample-js-game.svg?style=flat)](https://raw.githubusercontent.com/hejny/sample-js-game/master/LICENSE)
- [![NPM Version](https://badge.fury.io/js/@hejny%2Fsample-js-game.svg)](https://www.npmjs.com/package/@hejny/sample-js-game)
  [![Known Vulnerabilities](https://snyk.io/test/github/hejny/sample-js-game/badge.svg)](https://snyk.io/test/github/hejny/sample-js-game)
  [![Issues](https://img.shields.io/github/issues/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/issues)
 

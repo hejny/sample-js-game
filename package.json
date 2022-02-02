@@ -13,9 +13,9 @@
   "author": "Pavol Hejný",
   "license": "ISC",
   "devDependencies": {
-    "prettier": "^1.12.1",
-    "onchange": "^5.0.2",
-    "express": "^4.16.3",
-    "serve-static": "^1.13.2"
+    "prettier": "1.12.1",
+    "onchange": "5.0.2",
+    "express": "4.16.3",
+    "serve-static": "1.13.2"
   }
 }

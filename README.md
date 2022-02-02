@@ -2,9 +2,9 @@
 
 <!--Badges-->
 
- [![License of `This project was made as a sample for my workshop on LinuxDays 2018 and not maintained for a long time. So expect not very updated stuff.`](https://img.shields.io/github/license/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/blob/master/LICENSE)
- [![Known Vulnerabilities](https://snyk.io/test/github/hejny/sample-js-game/badge.svg)](https://snyk.io/test/github/hejny/sample-js-game)
- [![Issues](https://img.shields.io/github/issues/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/issues)
+[![License of `This project was made as a sample for my workshop on LinuxDays 2018 and not maintained for a long time. So expect not very updated stuff.`](https://img.shields.io/github/license/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/blob/master/LICENSE)
+[![Known Vulnerabilities](https://snyk.io/test/github/hejny/sample-js-game/badge.svg)](https://snyk.io/test/github/hejny/sample-js-game)
+[![Issues](https://img.shields.io/github/issues/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/issues)
 
 <!--/Badges-->
 

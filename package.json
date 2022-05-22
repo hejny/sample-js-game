@@ -1,22 +1,22 @@
 {
-  "name": "sample-js-game",
-  "version": "0.1.1",
-  "scripts": {
-    "start": "node server.js",
-    "prettier": "prettier --config .prettierrc --write \"{src,test,samples}/**/*.{ts,tsx,js,html,css}\" webpack.config.js",
-    "prettier-watch": "onchange \"**/*.{js,ts,tsx,json}\" -- npm run prettier"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hejny/sample-js-game"
-  },
-  "author": "Pavol Hejný",
-  "license": "SEE LICENSE IN LICENSE",
-  "devDependencies": {
-    "prettier": "1.12.1",
-    "onchange": "5.0.2",
-    "express": "4.16.3",
-    "serve-static": "1.13.2"
-  },
-  "description": "This project was made as a sample for my workshop on LinuxDays 2018 and not maintained for a long time. So expect not very updated stuff."
+    "name": "sample-js-game",
+    "version": "0.1.1",
+    "scripts": {
+        "start": "node server.js",
+        "prettier": "prettier --config .prettierrc --write \"{src,test,samples}/**/*.{ts,tsx,js,html,css}\" webpack.config.js",
+        "prettier-watch": "onchange \"**/*.{js,ts,tsx,json}\" -- npm run prettier"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hejny/sample-js-game"
+    },
+    "author": "Pavol Hejný",
+    "license": "SEE LICENSE IN LICENSE",
+    "devDependencies": {
+        "prettier": "1.12.1",
+        "onchange": "5.0.2",
+        "express": "4.16.3",
+        "serve-static": "1.13.2"
+    },
+    "description": "This project was made as a sample for my workshop on LinuxDays 2018 and not maintained for a long time. So expect not very updated stuff."
 }

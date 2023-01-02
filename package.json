@@ -14,7 +14,7 @@
     "license": "SEE LICENSE IN LICENSE",
     "devDependencies": {
         "prettier": "1.12.1",
-        "onchange": "5.0.2",
+        "onchange": "7.1.0",
         "express": "4.16.3",
         "serve-static": "1.13.2"
     },

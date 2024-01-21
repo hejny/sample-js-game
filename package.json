@@ -1,6 +1,6 @@
 {
     "name": "sample-js-game",
-    "version": "0.1.15",
+    "version": "0.1.16",
     "scripts": {
         "start": "node server.js",
         "prettier": "prettier --config .prettierrc --write \"{src,test,samples}/**/*.{ts,tsx,js,html,css}\" webpack.config.js",

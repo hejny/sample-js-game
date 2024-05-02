@@ -18,5 +18,15 @@
         "express": "4.16.3",
         "serve-static": "1.13.2"
     },
-    "description": "This project was made as a sample for my workshop on LinuxDays 2018 and not maintained for a long time. So expect not very updated stuff."
+    "description": "This project was made as a sample for my workshop on LinuxDays 2018 and not maintained for a long time. So expect not very updated stuff.",
+    "funding": [
+        {
+            "type": "individual",
+            "url": "https://buymeacoffee.com/hejny"
+        },
+        {
+            "type": "github",
+            "url": "https://github.com/hejny/sample-js-game/blob/main/README.md#%EF%B8%8F-contributing"
+        }
+    ]
 }

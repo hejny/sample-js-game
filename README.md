@@ -15,7 +15,7 @@
 
 [![Known Vulnerabilities](https://snyk.io/test/github/hejny/sample-js-game/badge.svg)](https://snyk.io/test/github/hejny/sample-js-game)
 [![Issues](https://img.shields.io/github/issues/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/issues)
-<!--[![License of 🚀 Sample javascript game](https://img.shields.io/github/license/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/blob/main/LICENSE)-->
+<!--[![License of Sample javascript game](https://img.shields.io/github/license/hejny/sample-js-game.svg?style=flat)](https://github.com/hejny/sample-js-game/blob/main/LICENSE)-->
 <!--[![Socket](https://socket.dev/api/badge/npm/package/sample-js-game)](https://socket.dev/npm/package/sample-js-game)-->
 
 <!--/Badges-->

@@ -11,7 +11,7 @@
         "url": "https://github.com/hejny/sample-js-game"
     },
     "author": "Pavol Hejný",
-    "license": "SEE LICENSE IN LICENSE",
+    "license": "Apache-2.0",
     "devDependencies": {
         "prettier": "1.12.1",
         "onchange": "5.0.2",
